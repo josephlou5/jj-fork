@@ -21,6 +21,9 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   extracted from the `.doc` field of the alias definition if it is a table
   with `.doc` and `.definition` properties.
 
+* Added `jj util backend name` command that prints the backend being used in the
+  current repo.
+
 ### Fixed bugs
 
 * `jj bookmark forget` no longer prints `Forgot N local bookmarks.` when no
