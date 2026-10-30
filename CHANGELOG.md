@@ -106,11 +106,11 @@ and this project adheres to
   silently expanded to `|x| abc`, which would then fail with a "keyword doesn't
   exist" error.
 
-* Local variables in the templating language no longer bleed into expanded
+* Lambda parameters in the templating language no longer bleed into expanded
   aliases. For example, previously, `|x| my_func()` would have worked with
   `template-aliases.'my_func()' = 'x ++ "!"'`, since the `x` variable from the
   lambda scope bled into the function call context. Now, this results in an
-  error that the keyword `x` doesn't exist.
+  error during the alias' resolution that the keyword `x` doesn't exist.
 
 ## [0.46.0] - 2026-10-07
 
