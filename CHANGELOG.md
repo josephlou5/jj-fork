@@ -60,6 +60,10 @@ and this project adheres to
   exposes `.object_id()`, `.file_type()`, and `.executable()` methods for
   inspecting each side of a (possibly conflicted) tree entry.
 
+* New `let([name, value, ...], body)` templating language which allows you to
+  assign a value to name bindings to be used in later expressions. Note that
+  each `name` is currently expanded inline and re-evaluated for each use.
+
 ### Fixed bugs
 
 * Date patterns such as `after:"2024-03-10 03:30"` are now resolved with the
