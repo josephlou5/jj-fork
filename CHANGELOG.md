@@ -60,6 +60,11 @@ and this project adheres to
   exposes `.object_id()`, `.file_type()`, and `.executable()` methods for
   inspecting each side of a (possibly conflicted) tree entry.
 
+* New `with(values..., |names...| body)` templating function which allows you to
+  assign expressions to name bindings in a lambda. Expressions are re-evaluated
+  for each use, so this is effectively the same as defining global template
+  aliases for each expression and has no performance benefit.
+
 ### Fixed bugs
 
 * Date patterns such as `after:"2024-03-10 03:30"` are now resolved with the
